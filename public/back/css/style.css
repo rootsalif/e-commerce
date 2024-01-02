@@ -1,0 +1,40 @@
+.search-area {
+    position: relative;
+}
+
+.results {
+    position: absolute;
+    top: 100%; /* Position sous la barre de recherche */
+    left: 0;
+    z-index: 999; /* Au-dessus du contenu existant */
+    background-color: #fff; /* Fond blanc pour les résultats */
+    border: 1px solid #ccc;
+    /* display: none; Caché par défaut */
+    width: 100%; /* Largeur égale à la largeur du conteneur parent */
+    max-height: 300px; /* Hauteur maximale pour éviter le débordement */
+    overflow-y: auto; /* Barre de défilement en cas de débordement */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    /* padding: 5%; */
+}
+
+
+
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.category {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+.subcategory {
+    padding: 5px;
+    margin-left: 20px;
+    border-left: 1px solid #ccc;
+}
